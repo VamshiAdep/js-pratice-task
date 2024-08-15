@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart with Roles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      width: 100%;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+    }
+    .item-form, .cart {
+      margin-bottom: 20px;
+    }
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+    }
+    .cart-item span {
+      display: inline-block;
+      width: 30%;
+    }
+    .admin-only, .super-admin-only {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart with Roles</h1>
+    <div>
+      <button onclick="setUserRole('user')">Set as User</button>
+      <button onclick="setUserRole('admin')">Set as Admin</button>
+      <button onclick="setUserRole('superAdmin')">Set as Super Admin</button>
+    </div>
+    
+    <div class="item-form">
+      <h2>Add Item</h2>
+      <label>
+        Name: <input type="text" id="item-name">
+      </label>
+      <label>
+        Price: <input type="number" id="item-price" step="1">
+      </label>
+      <label>
+        Quantity: <input type="number" id="item-quantity" min="1">
+      </label>
+      <button onclick="addItem()">Add to Cart</button>
+    </div>
+    
+    <div class="cart">
+      <h2>Cart Items</h2>
+      <div id="cart-items"></div>
+      <div id="total">Total: $0.00</div>
+    </div>
+    
+   
+    <div class="admin-only">
+      <h2>Admin Section</h2>
+      <p>This section is visible to admins and super admins only.</p>
+    </div>
+    
+
+    <div class="super-admin-only">
+      <h2>Super Admin Section</h2>
+      <p>This section is visible to super admins only.</p>
+    </div>
+  </div>
+
+  <script src="./cart.js"></script>
+</body>
+</html>

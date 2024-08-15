@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Library Management System</h1>
+
+      <div id="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by title, author, or genre"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+
+      <div id="book-info">
+        <img id="book-photo" src="" alt="Book Cover" />
+        <h2>Book Details</h2>
+        <p><strong>Title:</strong> <span id="title"></span></p>
+        <p><strong>Author:</strong> <span id="author"></span></p>
+        <p><strong>Year:</strong> <span id="year"></span></p>
+        <p><strong>Genre:</strong> <span id="genre"></span></p>
+        <p><strong>Status:</strong> <span id="status"></span></p>
+        <p>
+          <strong>Available Copies:</strong> <span id="available-copies"></span>
+        </p>
+      </div>
+
+      <button id="check-out-btn">Check Out</button>
+      <button id="return-btn">Return</button>
+      <div>
+        <input
+          type="text"
+          id="reserve-input"
+          placeholder="Enter your name for reservation"
+        />
+        <button id="reserve-btn">Reserve</button>
+      </div>
+      <div id="pagination">
+        <button id="prev-btn">Previous</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+    <script src="libray.js"></script>
+  </body>
+</html>

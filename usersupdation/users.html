@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile System</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>User Profile</h1>
+    <form id="userProfileForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" required>
+      
+      <label for="profilePicture">Profile Picture URL:</label>
+      <input type="url" id="profilePicture">
+      
+      <label for="bio">Bio:</label>
+      <textarea id="bio"></textarea>
+      
+      <button type="submit">Save Profile</button>
+    </form>
+    
+    <div id="profileDisplay" class="hidden">
+      <img id="profileImage" alt="Profile Picture">
+      <h2 id="displayUsername"></h2>
+      <p id="displayEmail"></p>
+      <p id="displayBirthdate"></p>
+      <p id="displayBio"></p>
+      <h3>Posts</h3>
+      <ul id="postsList"></ul>
+      <label for="newPost">New Post:</label>
+      <input type="text" id="newPost">
+      <button id="addPostButton">Add Post</button>
+    </div>
+  </div>
+  <script src="./user.js"></script>
+</body>
+</html>

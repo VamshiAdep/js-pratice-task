@@ -1,0 +1,42 @@
+
+*{
+  /* background-color: black; */
+}
+.container {
+  margin-top: 20rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    /* background-color: wheat; */
+    /* color: white; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .task-form, .task-list {
+    margin: 20px 0;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .task-item span {
+    margin: 0 10px;
+  }
+  
